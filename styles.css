@@ -1,0 +1,88 @@
+/* Challenge 09: Set the font to Verdana. */
+
+/* Challenge 12: Find a web safe font you like, and add it to your card. https://www.w3schools.com/cssref/css_websafe_fonts.php */ 
+
+body {
+    margin: 20px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;       /* Solution 09 */
+    font-family: Garamond;                                      /* Solution 12 */
+}
+
+/* Challenge 02: Set the width of the image to 150px. PS: Use a class to select the img element. */
+
+.avatar {                                                    /* Solution 02 */
+    width: 150px;
+    border-radius: 10px;                      /* Extra goals */
+    border: 2px solid white;                /* Extra goals */
+    box-shadow: 5px 5px 5px #4a6fa5;        /* Extra goals */
+}
+
+/*
+Challenge 03:
+a. Give the card div a class (name it "card")
+b. Select the card class and give it a dotted blue border
+c. Add 20 pixels of padding on all sides of the card
+*/
+
+/* Challenge 06: Add horizontal space around the flex children. Hint: google "justify content" */
+
+/* Challenge 07: Center the text in the <p> and <h4> elements. Note: you should only add ONE property, as inheritance should take care of applying it to both elements. */
+
+/* Challenge 08: Add colors to the card according to the design.
+        black - #2b2839 (the text color)
+        blue - #ddebf8
+        purple - #d8cefe    */
+
+/* Challenge 10: Replace the two margin properties with a single margin shorthand. */
+
+/* Challenge 11: Find a color palette you like on Coolors.co and use it in your business card. */
+
+.card {
+    /* border: 1px dotted blue;         /* Solution 03.b and then moved to another class */
+    width: 450px;
+    margin: 0 auto;                     /* Solution 10 */
+    /* margin-left: auto;               /* Solution 10 */
+    /* margin-right: auto;              /* Solution 10 */
+    padding: 20px;                      /* Solution 03.c */
+    display: flex;
+    justify-content: space-around;      /* Solution 06 */
+    text-align: center;                 /* Solution 07 */
+    /* color: #2b2839;                     /* Solution 08 */
+    /* background: #ddebf8;                /* Solution 08 */
+    /* border-bottom: 8px solid #d8cefe;   /* Solution 08 */
+    /*color: #4f6d7a;                     /* Solution 11 */
+    /* font-weight: bolder; */
+    font-size: large;                         /* Extra goals */
+    color: white;                           /* Extra goals */
+    text-shadow: 2px 2px 4px #0d3b66;       /* Extra goals */
+    background: #c0d6df;                /* Solution 11 */
+    border: 4px solid #4a6fa5;          /* Solution 11 */
+    border-radius: 12px;                  /* Extra goals */
+}
+
+/* Challenge 05: Create a utility class for the dotted blue border. Give the class to both flexbox children in the HTML. */
+
+.dottedBlueBorder {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+h3 {                                            /* Extra goals */
+    font-weight: normal;                        /* Extra goals */
+    transition: font-weight 500ms;              /* Extra goals */
+}
+
+h3:hover {                                      /* Extra goals */
+    font-weight: bolder;                        /* Extra goals */
+}
